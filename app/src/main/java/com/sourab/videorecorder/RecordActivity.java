@@ -338,8 +338,8 @@ public class RecordActivity extends Activity implements View.OnClickListener {
 
     @Override
     protected Void doInBackground(Void... params) {
-      recorderThread.stopRecord();
       recording = false;
+      recorderThread.stopRecord();
       releaseResources();
       publishProgress(100);
       return null;
