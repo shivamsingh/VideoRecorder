@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#a1a2a3"
+    android:orientation="vertical"
+    >
+
+  <RelativeLayout
+      android:id="@+id/camera_container"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:background="#a1a2a3"
+      >
+    <TextureView
+        android:id="@+id/surface_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+  </RelativeLayout>
+
+
+  <RelativeLayout
+      android:id="@+id/record_container"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerInParent="true"
+      >
+    <ImageView
+        android:id="@+id/record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/bg_record_button"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="Start\nRecording"
+        android:textColor="#FFFFFF"
+        android:textSize="17sp"
+        />
+  </RelativeLayout>
+
+
+  <LinearLayout
+      android:id="@+id/actions_container"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentRight="true"
+      android:layout_centerVertical="true"
+      android:layout_marginRight="10dp"
+      android:orientation="vertical"
+      >
+
+    <ImageView
+        android:id="@+id/swap_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_swap_camera"
+        />
+
+    <ImageView
+        android:id="@+id/video_on_off"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_video_record_on"
+        />
+  </LinearLayout>
+
+  <RelativeLayout
+      android:id="@+id/pause"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:layout_centerHorizontal="true"
+      android:layout_marginBottom="50dp"
+      android:visibility="gone"
+      >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_pause_white"
+        />
+
+    <ImageView
+        android:id="@+id/record_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/record_indicator"
+        />
+
+  </RelativeLayout>
+
+</RelativeLayout><!-- From: file:/Users/shivam/android/rnd/TouchToRecord/VideoRecorder/app/src/main/res/layout/record.xml -->
