@@ -299,7 +299,7 @@ public class RecordActivity extends Activity implements View.OnClickListener {
         //}
         break;
       case R.id.pause:
-
+        new AsyncStopRecording().execute();
         break;
     }
   }
